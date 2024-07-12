@@ -1,6 +1,9 @@
 using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
+
 using Countries.Models;
+
+using Microsoft.AspNetCore.Mvc;
+
 using Newtonsoft.Json;
 
 namespace Countries.Controllers;
@@ -16,7 +19,7 @@ public class HomeController : Controller
 
     public IActionResult Index(string sortOrder)
     {
-        ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+        ViewBag.NameSortParm = string.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
 
         List<Country> countries = GetCountries();
 

@@ -12,4 +12,3 @@ public class Country
     public required string Currency { get; set; }
     public required string Description { get; set; }
 }
-
