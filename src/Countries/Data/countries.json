@@ -1,0 +1,114 @@
+{
+  "countries": [
+    {
+      "name": "France",
+      "population": 67081000,
+      "latitude": 46.603354,
+      "longitude": 1.888334,
+      "continent": "Europe",
+      "capital": "Paris",
+      "area": 551695,
+      "currency": "Euro",
+      "description": "France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches."
+    },
+    {
+      "name": "Japan",
+      "population": 126300000,
+      "latitude": 36.204824,
+      "longitude": 138.252924,
+      "continent": "Asia",
+      "capital": "Tokyo",
+      "area": 377975,
+      "currency": "Yen",
+      "description": "Japan is an island country in East Asia, known for its dense cities, imperial palaces, and mountainous national parks."
+    },
+    {
+      "name": "Brazil",
+      "population": 211000000,
+      "latitude": -14.235004,
+      "longitude": -51.92528,
+      "continent": "South America",
+      "capital": "Brasília",
+      "area": 8515767,
+      "currency": "Real",
+      "description": "Brazil, the largest country in South America, is known for its Amazon rainforest, Christ the Redeemer statue, and Carnival festival."
+    },
+    {
+      "name": "Canada",
+      "population": 37742154,
+      "latitude": 56.130366,
+      "longitude": -106.346771,
+      "continent": "North America",
+      "capital": "Ottawa",
+      "area": 9984670,
+      "currency": "Canadian Dollar",
+      "description": "Canada, the second-largest country in the world, is known for its vast wilderness, national parks, and multicultural cities."
+    },
+    {
+      "name": "Australia",
+      "population": 25687041,
+      "latitude": -25.274398,
+      "longitude": 133.775136,
+      "continent": "Australia",
+      "capital": "Canberra",
+      "area": 7692024,
+      "currency": "Australian Dollar",
+      "description": "Australia, a country and continent surrounded by the Indian and Pacific oceans, is known for its Sydney Opera House, Great Barrier Reef, and unique wildlife."
+    },
+    {
+      "name": "India",
+      "population": 1380004385,
+      "latitude": 20.593684,
+      "longitude": 78.96288,
+      "continent": "Asia",
+      "capital": "New Delhi",
+      "area": 3287263,
+      "currency": "Indian Rupee",
+      "description": "India, a South Asian country, is known for its diverse culture, ancient history, and landmarks such as the Taj Mahal."
+    },
+    {
+      "name": "Russia",
+      "population": 144500000,
+      "latitude": 61.52401,
+      "longitude": 105.318756,
+      "continent": "Europe/Asia",
+      "capital": "Moscow",
+      "area": 17098242,
+      "currency": "Russian Ruble",
+      "description": "Russia, the largest country in the world, spans Eastern Europe and northern Asia, known for its rich history and diverse landscapes."
+    },
+    {
+      "name": "South Africa",
+      "population": 58775022,
+      "latitude": -30.559482,
+      "longitude": 22.937506,
+      "continent": "Africa",
+      "capital": "Pretoria (administrative), Bloemfontein (judicial), Cape Town (legislative)",
+      "area": 1221037,
+      "currency": "South African Rand",
+      "description": "South Africa, located at the southern tip of Africa, is known for its diverse cultures, national parks, and historical sites."
+    },
+    {
+      "name": "Germany",
+      "population": 83149300,
+      "latitude": 51.165691,
+      "longitude": 10.451526,
+      "continent": "Europe",
+      "capital": "Berlin",
+      "area": 357386,
+      "currency": "Euro",
+      "description": "Germany, in Central Europe, is known for its rich history, cultural heritage, and significant contributions to art, science, and industry."
+    },
+    {
+      "name": "Egypt",
+      "population": 100388073,
+      "latitude": 26.820553,
+      "longitude": 30.802498,
+      "continent": "Africa",
+      "capital": "Cairo",
+      "area": 1002450,
+      "currency": "Egyptian Pound",
+      "description": "Egypt, in North Africa, is known for its ancient civilization, monuments such as the Pyramids of Giza, and the Nile River."
+    }
+  ]
+}

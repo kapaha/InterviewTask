@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Countries.Models;
+using Newtonsoft.Json;
 
 namespace Countries.Controllers;
 
@@ -15,7 +16,23 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+
+        List<Country> countries = GetCountries();
+
+        return View(countries);
+    }
+
+    private List<Country> GetCountries()
+    {
+        string filePath = "/Users/kaiz/interview/InterviewTask/src/Countries/Data/countries.json";
+
+        string jsonContent = System.IO.File.ReadAllText(filePath);
+
+        CountryData countryData = JsonConvert.DeserializeObject<CountryData>(jsonContent);
+
+        List<Country> countries = countryData.Countries;
+
+        return countries;
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
