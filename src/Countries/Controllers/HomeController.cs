@@ -22,6 +22,28 @@ public class HomeController : Controller
         return View(countries);
     }
 
+    [Route("Home/Detail/{countryName}")]
+    public IActionResult Detail(string countryName)
+    {
+        Country? country = GetCountryByName(countryName);
+
+        if (country == null)
+        {
+            return NotFound();
+        }
+
+        return View(country);
+    }
+
+    private Country? GetCountryByName(string name)
+    {
+        List<Country> countries = GetCountries();
+
+        Country? country = countries.SingleOrDefault(c => c.Name.ToLower() == name.ToLower());
+
+        return country;
+    }
+
     private List<Country> GetCountries()
     {
         string filePath = "/Users/kaiz/interview/InterviewTask/src/Countries/Data/countries.json";

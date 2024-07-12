@@ -1,7 +1,7 @@
 ﻿@model List<Country>
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Country List";
 }
 
 <div class="wrapper">
@@ -26,7 +26,11 @@
                     @foreach (var country in Model)
                     {
                         <tr>
-                            <td>@country.Name</td>
+
+                            <td>
+                                <a
+                                    href="@Url.Action("Detail", "Home", new { countryName = country.Name })">@country.Name</a>
+                            </td>
                             <td>@country.Population</td>
                             <td>@country.Latitude</td>
                             <td>@country.Longitude</td>
@@ -42,10 +46,6 @@
         </div>
     </div>
 
-    @* @foreach (var country in Model)
-    {
-    <p>@country.Name</p>
-    } *@
 </div>
 
 
