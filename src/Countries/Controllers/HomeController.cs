@@ -14,10 +14,21 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public IActionResult Index(string sortOrder)
     {
+        ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
 
         List<Country> countries = GetCountries();
+
+        switch (sortOrder)
+        {
+            case "name_desc":
+                countries = countries.OrderByDescending(s => s.Name).ToList();
+                break;
+            default:
+                countries = countries.OrderBy(s => s.Name).ToList();
+                break;
+        }
 
         return View(countries);
     }
